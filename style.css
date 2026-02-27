@@ -420,3 +420,24 @@
          grid-template-columns: 1fr;
      }
  }
+
+ .footer-link {
+     position: relative;
+     text-decoration: none;
+     color: #4da6ff;
+ }
+
+ .footer-link::after {
+     content: "";
+     position: absolute;
+     width: 0%;
+     height: 2px;
+     left: 0;
+     bottom: -4px;
+     background: #4da6ff;
+     transition: 0.3s;
+ }
+
+ .footer-link:hover::after {
+     width: 100%;
+ }
